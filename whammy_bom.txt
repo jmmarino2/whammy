@@ -1,0 +1,126 @@
+This WHAMMY BOM is extracted from:
+https://www.diyaudio.com/forums/pass-labs/317803-whammy-pass-diy-headphone-amp-guide.html
+
+
+WHAMMY BOM
+
+Here's a rough (but useful) list with some important annotations.
+
+Most part numbers are from Mouser.com (unless they end with "-ND", and then it's Digikey.com)
+
+WHAMMY Bill of Materials
+
+================================================== ====================
+
+
+
+(2) .1UF C13, C23 .1uF 505-MKP2D031001FKA00
+
+
+(1) .22/250V C20 .22/250V Snubber KEMET R46KN322000M1M 22.5mm leads, radial, 26mmx6mmx15mm, X2 rated polypropylene
+
+(6) 1N4004 D1,D2, D3, D4, D7, D8 1N4004 583-1N4004-T
+
+
+
+(2) 1UF_PP C1 C5 1UF_PP Input coupling capacitor 594-2222-416-71005
+
+
+(2) P Mosfet Q2 Q4 2SJ313 May also use IRF9610, FQP3P20 Fairchild - 512-FQP3P20 Vishay - 844-IRF9610PBF
+
+
+
+(2) N Mosfet Q1 Q3 2SK2013 May also use IRF610, FQP3N30 Fairchild - 512-FQP3N30 Vishay - 844-IRF610PBF
+
+
+No matching required for Mosfets
+
+(2) 4N35 OPTO 1 2 4N35 78-4N35
+
+
+(6) 22UF/25V C12 C17 C22 C25 C26 C27 22UF/25V Nichicon UES 647-UES1E220MEM Silmic - 555-RFS25V220MF3#5 Panasonic FC - 667-EEA-FC1E220H
+
+
+
+(1) U3 7815 7815 positive regulator 863-MC7815CTG Digikey - NJM7815FA-ND
+
+
+(1) U2 7915 7915 negative regulator 863-MC7915CTG Digikey - NJM7915FA-ND
+
+
+
+(2) 100PF C2 C7 100PF Feedback compenstion cap, leave empty unless needed
+
+
+(6)220UF/50V C3 C4 C8 C9 C10 C28 220UF/50V 647-UKZ1E221MHM 50v parts were specified as there are a million of them at Pass Labs. You can use 25v capacitors with no disadvantages. A lower-voltage capacitor might also be physically smaller, and that would be good, as there's not much room around the opamp socket. Also using a smaller value capacitor (around 10-100uF) in these positions will be fine as the PSU is so incredibly clean by the time it makes it to these caps...
+
+
+(6) 3300UF/35V C6 C11 C14 C15 C18 C19 3300UF/35V 7.5mm lead spacing 18mm max diameter 35.5mm max length 647-UPW1V332MHD
+
+
+
+(1) ALPS_POT P1 RK27 688-RK27112A0A16
+
+
+(1) AMVECO_25VA TR1 Amveco 70053 Amgis L01-6365 Talema 70065K Digi-Key - 1295-1079-ND Digi-Key - TE2261-ND
+
+
+(2) LED D5 D6 {RED} These are not lights, but voltage references use red 604-WP710A10LID
+
+
+
+(1) Socket 8 pin U1 Not needed, unless you want to swap opamps. 575-199308
+
+(1) Opamp 863-LM833NG 595-RC4580IP 584-AD823ANZ
+
+(6) Heatsinks 532-531102B25G
+
+1/4W (or bigger) resistors
+
+Note - The part numbers shown are for the Vishay/Dale RN55D series, a mil-spec resistor with non-magnetic leads, non-RoHS, and 100% thermal derating. Which is to say it's a 1/4W resistor that says 1/8W on the box. And has tinned copper leads. Because they are non-RoHS (I.E., not lead-free) they are cheaper. (And honestly better. Look up "tin whiskers")
+They are of fantastic precision, sound great, and the value is written clearly on the body of the resistor. They are far and wide my favorite resistor.
+
+(6) RESQ R1 R2 R7 R10 R12 R14 1K 71-RN55D-F-1.0K
+
+
+
+(2) RESQ R39 R40 2.21K 71-RN55D-F-2.21K
+
+
+
+(2) RESQ R4 R8 4.75K 71-RN55D-F-4.75K
+
+
+
+(4) RESQ R16 R22 R29 R32 10ohm 71-RN55D-F-10
+
+
+
+(8) RESQ R6 R15 R23 R24 R25 R28 R33 R34 10K 71-RN55D-F-10k
+
+
+
+(4) RESQ R17 R27 R35 R26 47.5 ohm 71-RN55D-F-47.5
+
+
+(2) RESQ R18 R30 100 ohm 71-RN55D-F-100
+
+
+
+(2) RESQ R3 R5 100K 71-RN55D-F-100k
+
+
+(2) RESQ R9 R13 330 ohm 71-RN55D3300FTR
+
+
+
+(4) RESQ R11 R19 R26 R31 499 ohm 71-RN55D-F-499
+
+
+
+1/2w (or bigger) resistors
+
+(4) RES_HALF R20 R21 R37 R38 5.1ohm 1.0ohm - 5.1ohm is fine 71-CCF02-J-5.1
+
+
+1/4" Headphone jack ("D" style mounting, similar to an XLR jack) 568-NJ3FP6C-B / or Panel mount, as shown in above photos 568-NYS212 
